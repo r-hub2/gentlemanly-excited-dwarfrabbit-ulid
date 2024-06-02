@@ -1,0 +1,55 @@
+2024-06-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/wrapper.cpp: Documentation update for millisecond resolution
+	* R/RcppExports.R: Idem
+	* man/ulid.Rd: Idem
+
+	* inst/tinytest/test_ulid.R: Added tests for millisecond resolution
+
+	* src/Makevars: Ensure C++17 compilatin for std::chrono
+	* src/Makevars.win: Idem
+
+2024-05-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version,Date): Roll micro version and date
+
+	* src/ulid/ulid_struct.h: Switch to fork by Chris Bove which uses
+	std::chrono internally thus providing millisecond resolutions
+	* src/ulid/ulid_uint128.h: Idem
+	* src/wrapper.cpp: Updated to use std::chrono instead of time_t
+
+	* README.md: Document updates
+
+2024-05-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version,Date): Roll micro version and date
+
+	* README.md: Document current upstream time-resolution limitation
+	* src/wrapper.cpp: Idem
+	* R/RcppExports.R: Idem
+	* man/ulid.Rd: Idem
+	* src/RcppExports.cpp: Updated
+
+	* README.md: Add two badges
+
+2024-04-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version,Date): Release 0.3.1
+
+2024-04-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/wrapper.cpp: Renamed from ulid-main.cpp
+	* src/ulid/: Regrouped upstream header library in custom directory
+
+	* README.md: Several more edits, new badges
+
+2024-03-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Authors@R): New maintainer
+
+	* *: A number of files have been removed making the package smaller
+	and lighter, a few URLs have been updated to the new repo, manual
+	pages have been aligned, new alias ulid() added
+
+	* local/patches/ulid_0.3.0.patch: Document patch needed for CRAN
+	compliance in case upstream changes again and we need to back his out

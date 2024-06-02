@@ -2,8 +2,8 @@ Package: ulid
 Type: Package
 Title: Generate Universally Unique 'Lexicographically' 'Sortable'
         Identifiers
-Version: 0.3.1.2
-Date: 2024-05-30
+Version: 0.3.1.3
+Date: 2024-06-03
 Authors@R: c(
   person("Bob", "Rudis", role = "aut", comment = c(ORCID = "0000-0001-5670-2640")),
   person("Suyash", "Verma", role = "aut", comment = "ULID C++ <https://github.com/suyash/ulid/>"),
@@ -31,7 +31,7 @@ Suggests: tinytest
 Imports: Rcpp
 LinkingTo: Rcpp
 RoxygenNote: 7.3.1
-Packaged: 2024-06-02 19:24:01 UTC; edd
+Packaged: 2024-06-02 20:44:01 UTC; edd
 Author: Bob Rudis [aut] (<https://orcid.org/0000-0001-5670-2640>),
   Suyash Verma [aut] (ULID C++ <https://github.com/suyash/ulid/>),
   Dirk Eddelbuettel [cre] (<https://orcid.org/0000-0001-6419-907X>)

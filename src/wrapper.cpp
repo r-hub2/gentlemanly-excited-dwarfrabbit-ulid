@@ -54,7 +54,7 @@ Rcpp::DataFrame unmarshal(std::vector<std::string> ulids) {
         // convert std::chrono object to a millisecond-resolution time point
         auto tp = std::chrono::time_point_cast<std::chrono::milliseconds>(ulid::Time(u));
         // scale to get POSIXct fractional seconds since epoch, at msec resolution
-        double d = std::chrono::duration<double>(tp.time_since_epoch()).count() / 1000.0;
+        double d = std::chrono::duration<double>(tp.time_since_epoch()).count();
         dt[i] = Rcpp::Datetime(d);
         cv[i] = ulids[i].substr(10);
     }
